@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    width: 90vw;
+    height: 500px;
+    margin: 0 auto;
+
+}
+
+.face_section {
+    width: 50vw;
+    position: relative;
+    /* background-color: #ffe0ff; */
+}
+
+.face_section img {
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text_section {
+    width: 50vw;
+    position: relative;
+    /* background-color: #fff8e0; */
+}
+
+.text_section section {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgb(161, 145, 123); */
+}
+
+.title_section {
+    font-size: 3rem;
+}
