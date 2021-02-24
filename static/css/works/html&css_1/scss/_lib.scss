@@ -1,0 +1,73 @@
+//-----------------//
+//      変数       //
+//-----------------//
+
+
+//-----------------//
+//      mixin      //
+//-----------------//
+
+@mixin pc {
+    @media screen and (min-width: 960px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: 959px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+//-----------------//
+//      共通
+//-----------------//
+html {
+    font-size: 62.5%;  //10px remに対応している
+}
+body {
+    font-size: 18px;
+}
+.inner {
+    width: 83.3%; //PCだと1068px
+    margin: 0 auto;
+    @include sp {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    color: #707070;
+    letter-spacing: 5.4px;
+    margin-bottom: 10px;
+    @include sp {
+        margin-bottom: 50px;
+    }
+    &:after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid;
+        width: 5.5em;
+        margin-left: 2.25rem;
+    }
+}
+
+.concept,
+.menu,
+.access {
+    padding-top: 260px;
+    padding-bottom: 70px;
+    @include sp {
+        padding-top: 60px;
+        padding-bottom: 63px;
+    }
+}

@@ -8,7 +8,6 @@ def index():
         return render_template('index.html')
     else:
         return redirect('/')
-        
 
 @app.route('/about')
 def about():
@@ -17,6 +16,10 @@ def about():
 @app.route('/work')
 def work():
     return render_template('work.html')
+
+@app.route('/work/html&css_1')
+def work_hc1():
+    return render_template('works/html&css_1.html')
 
 # @app.route('/contact')
 # def contact():
