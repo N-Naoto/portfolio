@@ -1,0 +1,12 @@
+footer {
+    width: 83.2%; //1136px
+    margin: 0 0 0 auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 1rem;
+    @include tab {
+        width: 100%;
+    }
+}

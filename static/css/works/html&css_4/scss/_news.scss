@@ -1,0 +1,40 @@
+.news {
+    width: 62.5%;//62.5%,647px
+    height: auto; //1093px
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include tab {
+        width: 60%;
+    }
+}
+
+.news-wrap {
+    width: 310px;
+    height: 339px; //339px
+    margin-bottom: 38px;
+    box-shadow: 1px 1px 6px #00000029;
+    &:nth-child(6) {
+        margin-bottom: 0;
+    }
+}
+.news-wrap_text {
+    width: 275px;
+    margin: 0 auto;
+    padding: 26px 0 19px 0;
+    h3 {
+        font-weight: bold;
+    }
+    span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #E6E6E6;
+        margin: 20px 0;
+    }
+    p {
+        line-height: 24px;
+        height: 90px;
+        overflow: hidden;
+    }
+}

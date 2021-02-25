@@ -1,0 +1,797 @@
+/* 760px以下の表示 */
+.container {
+      flex-direction: column;
+    }
+.re_br {
+      display: inline;
+    }
+
+/*----------------------------
+            header
+-----------------------------*/
+
+header p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 10px;
+}
+header img {
+      position: absolute;
+      top: 35px;
+      left: 15px;
+      object-fit: cover;
+      width: 90px;
+}
+header .btn {
+      display: none;
+}
+.responsivefile {
+      display: flex;
+      float: right;
+      background-color: #DA6B64;
+      color: #fff;
+      padding: 13px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      font-size: 12px;
+    }
+.responsivefile:hover {
+      text-decoration: underline;
+}
+.fa-file-alt {
+      display: flex;
+} 
+/*----------------------------
+            main
+-----------------------------*/
+.main {
+      width: 100%;
+      height: 300px;
+      font-weight: 600;
+      padding-top: 80px;
+      background-image: url("../images/main.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      -moz-background-size: cover;
+    }
+.main h1 {
+      font-size: 18px;
+      line-height: 29px;
+}
+.main p {
+      font-size: 15px;
+      line-height: 17px;
+}
+/*----------------------------
+            page_top
+-----------------------------*/
+#page_top{
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #ECECEC;
+    }
+    #page_top a{
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 50px;
+      text-decoration: none;
+    }
+    #page_top a::before{
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: '\f106';
+      font-size: 25px;
+      color: #333333;
+      position: absolute;
+      width: 50px;
+      height: 25px;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+    }
+/*----------------------------
+            conversion
+-----------------------------*/
+.conversion h2 {
+      font-size: 15px;
+}
+.conversion span {
+      font-size: 15px;
+      margin-bottom: 20px;
+      font-weight: normal;
+}
+.conversion-btn {
+      font-size: 20px;
+      width: 80%;
+      margin: 0 auto;
+      padding: 15px 20px;
+}
+.conversion p {
+      font-size: 15px;
+      margin-top: 20px;
+}
+/*----------------------------
+            introduction
+-----------------------------*/
+.introduction {
+      height: 700px;
+      background-size: 100% 100%;
+}
+.introduction h1 {
+      font-size: 18px;
+      padding: 1em 10em;
+}
+.introduction p {
+      font-size: 15px;
+}
+.introduction h1:before, 
+.introduction h1:after { 
+      content:'';
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      display: inline-block;
+}  
+.introduction h1:before {
+      border-left: solid 4px #EBB94D;
+      border-top: solid 4px #EBB94D;
+      top:0;
+      left: 0;
+}  
+.introduction h1:after {
+      border-right: solid 4px #EBB94D;
+      border-bottom: solid 4px #EBB94D;
+      bottom:0;
+      right: 0;
+}
+/*----------------------------
+            aboutisara
+-----------------------------*/
+
+p.circle1 {
+      font-size: 12px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      line-height: 65px;
+    }
+    .aboutisara h1 {
+      font-size: 18px;
+      line-height: 40px;
+      padding: 1em 12em;
+      margin: 10px 0;
+    }
+    .aboutisara h1:before, 
+    .aboutisara h1:after { 
+      width: 25px;
+      height: 25px;
+    }
+    .aboutisara h1:before {
+      border-left: solid 3px #EBB94D;
+      border-top: solid 3px #EBB94D;
+    }   
+    .aboutisara h1:after {
+      border-right: solid 3px #EBB94D;
+      border-bottom: solid 3px #EBB94D;
+    }  
+    .aboutisara h2 {
+      font-size: 15px;
+    }
+    .aboutisara .skills {
+      display: inline-block;
+      padding: 10px 30px;
+      margin-top: 30px;
+    }
+    .aboutisara h3 {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .aboutisara .skill {
+      display: inline-block;
+      padding-right: 10px;
+      height: 30px;
+    }
+    .aboutisara img {
+      width:auto;
+      height:auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .aboutisara p {
+      font-size: 10px;
+    }
+
+/*----------------------------
+            aboutsecond
+-----------------------------*/
+.aboutsecond {
+      height: auto;   
+    }
+    .aboutsecond h1 {
+      font-size: 18px;
+    }
+    .aboutsecond h2 {
+      font-size: 13px;
+    }
+    .aboutsecond h3 {
+      font-size: 13px;
+    }
+
+    .aboutsecond .step {
+      display: block;
+      padding: 10px 20px;
+      width: 80%;
+      margin: 0 auto 20px auto;
+    }
+    .aboutsecond .step h4 {
+     font-size: 12px;
+      margin-bottom: 10px;
+      padding: 0 250px;
+
+    }
+    .aboutsecond .step p {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    
+    .aboutsecond .step p.big {
+      font-size: 12px;
+    }
+    .aboutsecond .bluebox {
+      background-color: #016EA9;
+      margin-top: 0;
+      width: 100%;
+      height: 100px;
+    }
+    .aboutsecond .bluebox p {
+      font-size: 12px;
+      padding-top: 20px;
+    }
+
+
+/*----------------------------
+            aboutthird
+-----------------------------*/
+.aboutthird {
+      padding-top: 30px;
+    }
+    .aboutthird h1 {
+      font-size: 18px;
+    }
+    .aboutthird h1 span {
+      font-size: 12px;
+    }
+    .aboutthird h2 {
+      font-size: 15px;
+    }
+    .aboutthird img {
+      width: 120px;
+      height: auto;
+      margin-right: 30px;
+    }
+    .aboutthird p {
+      font-size: 12px;
+    }
+/*----------------------------
+            merit
+-----------------------------*/
+.merit {
+      background-color: #FEF5E0;
+      width: 100%;
+    }
+    .merit h1 {
+      font-size: 15px;
+    }
+    
+    .merit h1:before, 
+    .merit h1:after { 
+      width: 25px;
+      height: 25px;
+    }
+    .merit h1 span {
+      font-size: 18px;
+    }
+    .merits {
+      width: 730px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .mt {
+      width: 100%;
+      height: auto;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 0;
+      
+    }
+    .mt img {
+      width: 90%;
+      height: 180px;
+      padding-right: 20px;
+    }
+    .mt h2 {
+      font-size: 15px;
+      text-align: center;
+    }
+    .mt p {
+      font-size: 12px;
+      display: block;
+      margin-left: 10px;
+      width: 680px;
+    }
+    
+    .merit .support {
+      padding: 0;
+      margin-top: 30px;
+      width: 90%;
+    }
+    .support h2 {
+      font-size: 18px;
+    }
+    .support h3 {
+      font-size: 15px;
+      line-height: 24px;
+      margin: 0 0 15px 0;
+    }
+    .support p {
+      font-size: 10px;
+    }
+    .merit p.attention {
+      font-size: 12px;
+    }
+
+/*------------------------------------------------------
+                                 teacher
+-------------------------------------------------------*/
+
+    .teacher h1 {
+      font-size: 18px;
+      padding-top: 40px;
+      padding-bottom: 45px;
+    }
+    .teacher h2 {
+      font-size: 12px;
+    }
+    .people {
+      width: 100%;
+    }
+    .human {
+      width: 90%;
+      height: auto;
+      margin-left: 0;
+      margin-top: 0;
+    }
+ 
+    .human img {
+      border-radius: 99px;
+      position: relative;
+      top: 30px;
+      width: 120px;
+      z-index: 10;
+    }
+    .human .detail {
+      margin: 0;
+      position: relative;
+      top: 0;
+    }
+    .human h3 {
+      font-size: 12px;
+    }
+    .human h4 {
+      font-size: 12px;
+      margin: 15px 0;
+    }
+    .human .detail p {
+      font-size: 12px;
+      line-height: normal;
+    }
+
+/*------------------------------------------------------
+                                 why
+-------------------------------------------------------*/
+.why {
+      height: 200px;
+    }
+    p.circle2 {
+      font-size: 12px;
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+    
+    .why h1 {
+      font-size: 14px;
+      line-height: 2;
+      padding: 0.5em 12em;
+    }
+    
+    .why h1:before, 
+    .why h1:after { 
+      width: 25px;
+      height: 25px;
+    }
+    
+    .why .triangle {
+        border-top: 35px solid #EBB94D;
+        border-right: 35px solid transparent;
+        border-bottom: 35px solid transparent;
+        border-left: 35px solid transparent;
+    }
+
+/*------------------------------------------------------
+                                 answer
+-------------------------------------------------------*/
+.answer h1 {
+      font-size: 18px;
+    }
+    .answer h2 {
+      font-size: 12px;
+      margin: 10px 0;
+    }
+    .answer small {
+      font-size: 12px;
+      line-height: 19px;
+    }
+    .answer .company  img {
+      width: 220px;
+      height: 220px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .answer .company .text {
+      width: 85%;
+      padding-top: 10px;
+    }
+    .answer .company span {
+      letter-spacing: 3px;
+    }
+/*------------------------------------------------------
+                                 class
+-------------------------------------------------------*/
+.class {
+      padding-bottom: 0;
+    }
+    .class h1 {
+      font-size: 18px;
+      margin-top: 30px;
+      padding-top: 30px;
+    }
+    .class h2 {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+    .class .step {
+      width: 90%;
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+    .class .step h3 {
+      font-size: 15px;
+      padding: 10px;
+    }
+    .class .step p {
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+    
+    .classbottom {
+      height: auto;
+      padding: 20px 0;
+    }
+    .classbottom p {
+      font-size: 15px;
+      padding-top: 0;
+    }
+/*------------------------------------------------------
+                                 flow
+-------------------------------------------------------*/
+
+    .flow h1 {
+          font-size: 18px;
+    }
+
+    .flow img.br_img{
+      display: none;
+    }
+    .flow .flowbox {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+    }
+    .flowleft {
+      width: auto;
+      height: auto;
+      letter-spacing: 0.1rem;
+      display: inline-block;
+      float: left;
+      padding: 8px;
+    }
+    .flowleft img {
+      width: 40px;
+      height: 40px;
+      display: block;
+      float: left;
+    }
+    .flowleft h2 {
+      font-size: 15px;
+      float: left;
+      margin: 10px 0 0 10px;
+    }
+    .flowright {
+      width: 75%;
+      height: auto;
+      text-align: left;
+      display: inline-block;
+      float: left;
+      padding: 30px 0;
+      display: none;
+}
+
+
+
+
+
+    .flowright p.bold {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 26px;
+    }
+    p.mb1 {
+      line-height: 40px;
+      margin-bottom: 0.5rem;
+    }
+    p.mb2 {
+      margin-bottom: 1rem;
+    }
+    
+    .flowright p.normal {
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .full_br {
+      display: none;
+    }
+
+/*------------------------------------------------------
+                              bangkok
+-------------------------------------------------------*/
+.bangkok {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+    }
+    .bangkok .btxt {
+      padding: 0;
+      padding-left: 30px;
+    }
+    .bangkok h1 {
+      font-size: 24px;
+      text-align: center;
+      padding: 25px 0;
+    }
+    .bangkok p {
+      font-size: 12px;
+      line-height: 19px;
+    }
+    .bangkok li {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 25px;
+    }
+    .bangkok h2 {
+      font-size: 15px;
+      line-height: 32px;
+      padding-bottom: 15px;
+    }
+/*------------------------------------------------------
+                              special
+-------------------------------------------------------*/
+.special {
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+    .special h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .special p {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    .special .specialfont {
+      display: inline-block;
+      position: relative;
+      top: 25px;
+      width: auto;
+      padding: 0 10px;
+    }
+    .special .specialfont h2{
+      font-size: 18px;
+    }
+    .specialbox {
+      border: 2px solid #fff;
+      width: 85%;
+      height: auto;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    .specialbox .tokuten{
+      background-color: #F7C23C;
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      vertical-align: top;
+      border-radius: 0;
+    }
+    .specialbox .center {
+      margin: 0;
+    }
+    .tokutentxt {
+      position: relative;
+      top: 0;
+      margin-left: 50px;
+    }
+    .tokuten h3 {
+      font-size: 12px;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+      color: #F7C23C;
+      display:inline-block;
+      float: left;
+      margin-bottom: 10px;
+    }
+    .circle3 {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      line-height: 65px;
+      background-color: #fff;
+    }
+    .tokuten p.full_p {
+      display: none;
+    }
+    .re_p {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 19px;
+      width: 100%;
+      color: #fff;
+      text-align: left;
+      padding-top: 15px;
+    }
+/*------------------------------------------------------
+                              specialdetail
+-------------------------------------------------------*/
+
+    .specialdetail {
+      height: auto;
+      padding-bottom: 30px;
+    }
+    .specialdetail h2 {
+      font-size: 18px;
+    }
+    .specialdetail p {
+      font-size: 12px;
+    }
+    .specialdetail h1 {
+      font-size: 18px;
+      line-height: 2;
+      padding: 1em 10em;
+    }
+    
+    .specialdetail h1:before, 
+    .specialdetail h1:after { 
+      width: 25px;
+      height: 25px;
+    }
+/*------------------------------------------------------
+                              isaralearning
+-------------------------------------------------------*/
+    .isaralearning h1 {
+      font-size: 18px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .isaralearning h2 {
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+    .learningbox {
+      width: 100%;
+      padding-bottom: 50px;
+    }
+    .learningleft {
+      height: auto;
+      display: inline-block;
+      float: left;
+    }
+    .learningleft img {
+      width: 95%;
+      height: auto;
+    }
+    .learningright {
+      display: inline-block;
+      float: left;
+      padding-left: 20px;
+      text-align: left;
+      width: 80%;
+    }
+    .learningright p {
+      font-size: 14px;
+    }
+/*------------------------------------------------------
+                              contactform
+-------------------------------------------------------*/
+.contactform {
+      padding-bottom: 30px;
+    }
+    .contactform h1 {
+      font-size: 18px;
+      padding-top: 50px;
+    }
+    .contactform h2 {
+      font-size: 12px;
+      margin: 30px 0;
+    }
+    form {
+      width: 90%;
+    }
+
+/*------------------------------------------------------
+                              question
+-------------------------------------------------------*/
+    .question h1 {
+      font-size: 18px;
+    }
+    /*アコーディオン全体*/
+    .menu {
+      width: 90%;
+    }
+    /*バー部分*/
+    .menu label {
+      padding: 10px;
+      font-size: 15px;
+    }
+    /*開いたときに表示される部分*/
+    .menu li {
+      font-size: 12px;
+    }
+
+/*------------------------------------------------------
+                              footer
+-------------------------------------------------------*/
+footer {
+      background-color: #ECECEC;
+      font-size: 10px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+      letter-spacing: 0.1rem;
+    }
+    footer a {
+      text-decoration: none;
+    }
+    
+    footer .fbtn {
+      margin: 20px 0 40px 0;
+    }
+
+
+/* 560px以下の表示 */
+@media screen and (max-width: 560px) {
+
+}
+
+

@@ -1,0 +1,78 @@
+//-----------------//
+//      変数       //
+//-----------------//
+$sky: #06BEB6;
+$navy:  #283C86;
+$smoke: #F8F8F8;
+
+//-----------------//
+//      mixin      //
+//-----------------//
+
+@mixin pc {
+    @media screen and (min-width: 960px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: 959px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+//-----------------//
+//      共通
+//-----------------//
+
+html {
+    font-size: 62.5%;   //10pxremに対応している
+}
+body {
+    font-size: 12px;
+    line-height: 1.67;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 60px;
+    @include sp {
+        margin-bottom: 40px;
+    }
+    &--bold {
+        font-weight: bold;
+        margin-right: 0.5em;
+    }
+    &:before {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid;
+        width: 2em;
+        margin-right: 1.7rem;
+    }
+    &:after {
+        @extend .title:before;
+        margin-right: 0; //打ち消し用
+        margin-left: 1.7rem;
+    }
+}
+
+.inner {
+    width: 100% - 9.7% * 2;//9.7%は両側の余白
+    margin: 0 auto;
+    padding: 90px 0;
+    @include sp {
+        width: 90%;
+        padding: 50px 0;
+    }
+}
+

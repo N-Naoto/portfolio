@@ -1,0 +1,60 @@
+//-----------------//
+//      mixin      //
+//-----------------//
+
+@mixin pc {
+    @media screen and (min-width: 960px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: 959px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+//-----------------//
+//      共通
+//-----------------//
+html {
+    font-size: 62.5%;  //10px remに対応している
+}
+body {
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.inner {
+    width: 85.4%; //PCだと1093px 85.4%
+    margin: 0 auto;
+    text-align: center;
+}
+.title {
+    display: inline-block;
+    color: white;
+    position: relative;
+    font-size: 3.6rem;
+    margin-top: 100px;
+    @include tab {
+            margin-top: 0;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        bottom: -20%;
+        transform: translateX(-50%);
+        width: 78px;
+        height: 1px;
+        background-color: white;
+    }
+}
+

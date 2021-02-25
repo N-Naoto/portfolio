@@ -1,0 +1,55 @@
+.cate {
+    width: 33.8%;//33.8%, 350px
+    height: auto;
+    @include tab {
+        width: 40%;
+    }
+    &-title {
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+    span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #707070;
+        margin-top: 22px;
+    }
+}
+
+.cate-box {
+    width: 100%;
+    height: 155px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.cate-wrap {
+    width: 100%;
+    height: 89px;
+    display: flex;
+    p {
+        line-height: 24px;
+        overflow: hidden;
+        margin-left: 15px;
+    }
+}
+
+.cate-img {
+    width: 100%;
+    height: 234px;
+    padding-top: 40px;
+    background-image: url(../img/ad.png);
+    background-size: cover;
+    position: relative;
+    p {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        padding: 12px 0;
+        color: white;
+        background-color: black;
+    }
+}
