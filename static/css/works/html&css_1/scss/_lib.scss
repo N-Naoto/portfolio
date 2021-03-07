@@ -1,9 +1,4 @@
 //-----------------//
-//      変数       //
-//-----------------//
-
-
-//-----------------//
 //      mixin      //
 //-----------------//
 
@@ -32,42 +27,26 @@ html {
     font-size: 62.5%;  //10px remに対応している
 }
 body {
-    font-size: 18px;
+    font-size: 14px;
 }
-.inner {
-    width: 83.3%; //PCだと1068px
-    margin: 0 auto;
-    @include sp {
+
+.container {
+    width: 83.2%; //1136px
+    margin: 0 0 0 auto;
+    @include tab {
         width: 100%;
-        padding: 0 20px;
+        margin: 0;
     }
 }
 
-.title {
+.main-wrap {
+    width: 100%;
+    height: auto;
+    padding: 58px 50px 85px;
     display: flex;
-    align-items: center;
-    color: #707070;
-    letter-spacing: 5.4px;
-    margin-bottom: 10px;
+    justify-content: space-between;
     @include sp {
-        margin-bottom: 50px;
-    }
-    &:after {
-        display: inline-block;
-        content: "";
-        border-top: 1px solid;
-        width: 5.5em;
-        margin-left: 2.25rem;
+        padding: 30px 20px;
     }
 }
 
-.concept,
-.menu,
-.access {
-    padding-top: 260px;
-    padding-bottom: 70px;
-    @include sp {
-        padding-top: 60px;
-        padding-bottom: 63px;
-    }
-}

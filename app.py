@@ -25,22 +25,6 @@ def work_hc1():
 def work_hc2():
     return render_template('works/html&css_2.html')
 
-@app.route('/works/html&css_3')
-def work_hc3():
-    return render_template('works/html&css_3.html')
-
-@app.route('/works/html&css_4')
-def work_hc4():
-    return render_template('works/html&css_4.html')
-
-@app.route('/works/html&css_5')
-def work_hc5():
-    return render_template('works/html&css_5.html')
-
-@app.route('/works/html&css_6')
-def work_hc6():
-    return render_template('works/html&css_6.html')
-
 @app.route('/works/js_1')
 def work_js1():
     return render_template('works/js_1.html')
