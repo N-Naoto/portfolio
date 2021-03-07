@@ -7,12 +7,26 @@ body::-webkit-scrollbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 70vw;
-    /* height: 500px; */
+    width: 90vw;
     margin: 0 auto;
     background-color: forestgreen;
 }
+.section_html_css {
+    width: 100%;
+}
 
+.work_box {
+    width: 550px;
+    margin-bottom: 30px;
+}
+
+.work_box p {
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
 
 .wrapper_html_css,
 .wrapper_javascript,
@@ -42,7 +56,7 @@ body::-webkit-scrollbar {
     width: 550px;
     height: 259px;
     background-color: maroon;
-    margin-bottom: 10px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
 }
 
 footer {

@@ -45,6 +45,10 @@ def work_hc6():
 def work_js1():
     return render_template('works/js_1.html')
 
+@app.route('/works/js_2')
+def work_js2():
+    return render_template('works/js_2.html')
+
 # @app.route('/contact')
 # def contact():
 #     return render_template('contact.html')
