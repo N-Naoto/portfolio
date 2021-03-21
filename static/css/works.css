@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
     justify-content: space-around;
     width: 90vw;
     margin: 0 auto;
-    background-color: forestgreen;
+    /* background-color: forestgreen; */
 }
 .section_html_css,
 .section_javascript,
@@ -42,23 +42,29 @@ body::-webkit-scrollbar {
 /*! もし記事数が偶数ならコメントアウト */
 /*! ******************************* */
 
-/* .wrapper_html_css::after, */
-.wrapper_javascript::after,
-.wrapper_python::after{
-    display: block;
-    content:"";
-    /* width: 400px;
-    height: 250px; */
-    width: 550px;
-    height: 259px;
-    /* background-color: black; */
+@media screen and (min-width: 1223px) {
+    /* .wrapper_html_css::after, */
+    .wrapper_javascript::after,
+    .wrapper_python::after{
+        display: block;
+        content:"";
+        width: 550px;
+        height: 259px;
+        /* background-color: black; */
+    }
 }
+
 
 .box {
     width: 550px;
     height: 259px;
     background-color: maroon;
     box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+}
+@media screen and (max-width: 544px) {
+    .box {
+        width: 98%;
+    }
 }
 
 footer {

@@ -36,6 +36,9 @@
     transform: translate(-50%, -50%);
     /* background-color: rgb(161, 145, 123); */
 }
+.text_section section ul li {
+    margin-bottom: 5px;
+}
 
 .title_section {
     font-size: 3rem;
