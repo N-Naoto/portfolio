@@ -11,7 +11,9 @@ body::-webkit-scrollbar {
     margin: 0 auto;
     background-color: forestgreen;
 }
-.section_html_css {
+.section_html_css,
+.section_javascript,
+.section_python {
     width: 100%;
 }
 
@@ -42,14 +44,14 @@ body::-webkit-scrollbar {
 
 /* .wrapper_html_css::after, */
 .wrapper_javascript::after,
-.wrapper_python::after {
+.wrapper_python::after{
     display: block;
     content:"";
     /* width: 400px;
     height: 250px; */
     width: 550px;
     height: 259px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .box {
