@@ -4,7 +4,7 @@ body::-webkit-scrollbar {
 }
 
 /* aboutの設定 */
-.wrapper_about {
+.wrapper {
     display: flex;
     width: 90vw;
     height: 500px;
@@ -39,27 +39,23 @@ body::-webkit-scrollbar {
     transform: translate(-50%, -50%);
 }
 
-.title_section {
-    font-size: 3rem;
-}
-
 .title {
-    margin-left: 20px;
 }
 
-/* Whyの設定 */
-.wrapper_why {
+.wrapper_contents {
     width: 90vw;
     margin: 0 auto;
-    /* background-color: aquamarine; */
+}
+
+.wrapper_why {
+    width: 70vw;
+    margin: 0 auto;
 }   
 
 
-/* Skillsの設定 */
 .wrapper_skills {
-    width: 90vw;
+    width: 70vw;
     margin: 0 auto;
-    /* background-color: antiquewhite; */
     display: flex;
     justify-content: center;
 }
@@ -67,9 +63,6 @@ body::-webkit-scrollbar {
 .wrapper_skills ul li {
     font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-.lang_level {
     list-style: none;
 }
 
